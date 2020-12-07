@@ -1,0 +1,23 @@
+insert into teacher (Name,Phone,Datetime,age) VALUES('Sir Tameez','0320-2010410',sysdate(),-25)
+
+create table Student
+(
+id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(50),
+    Phone varchar(50),
+    TeacherId int,
+    FOREIGN KEY(TeacherId) REFERENCES teacher(Id)
+
+)
+
+
+create table STD
+(
+id int ,
+    center varchar(50),
+    name varchar(50),
+    
+    PRIMARY key(id,center)
+    
+
+)
